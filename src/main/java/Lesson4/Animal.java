@@ -8,11 +8,38 @@ public abstract class Animal {
     //6. Животные могут выполнять действия: бежать, плыть, перепрыгивать препятствие.
     // В качестве параметра каждому методу передается величина, означающая или длину препятствия (для бега и плавания), или высоту (для прыжков);
     //9. * Добавить животным разброс в ограничениях. То есть у одной собаки ограничение на бег может быть 400 м., у другой – 600 м.
+    protected String name;
 
-    public abstract void Run(int range, int limit);
+    protected int runLimit = 0;
+    protected int swimLimit = 0;
+    protected double jumpLimit = 0;
 
-    public abstract void Swim(int range, int limit);
+    public Animal(String name) {
+        this.name = name;
+    }
 
-    public abstract void Jump(float height, float limit);
+    public void setRunLimit(int runLimit) {
+        this.runLimit = runLimit;
+    }
+
+    public void setSwimLimit(int swimLimit) {
+        this.swimLimit = swimLimit;
+    }
+
+    public void setJumpLimit(double jumpLimit) {
+        this.jumpLimit = jumpLimit;
+    }
+
+    public void Run(int range) {
+        System.out.println((range > 0 && range > runLimit) ? "Run: false" : "Run: true");
+    }
+
+    public void Swim(int range) {
+        System.out.println((range > 0 && range > swimLimit) ? "Run: false" : "Run: true");
+    }
+
+    public void Jump(double height) {
+        System.out.println((height > 0 && height > jumpLimit) ? "Jump: false" : "Jump: true");
+    }
 
 }
