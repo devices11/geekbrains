@@ -1,4 +1,4 @@
-package LoopsAndArrays;
+package Lesson2;
 
 /**
  * Created by Izotov V.A. on 22.11.2019.

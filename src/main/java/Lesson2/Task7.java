@@ -1,4 +1,4 @@
-package LoopsAndArrays;
+package Lesson2;
 
 import Base.Base;
 
