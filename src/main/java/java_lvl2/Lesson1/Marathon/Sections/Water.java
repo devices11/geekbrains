@@ -1,7 +1,9 @@
-package java_lvl2.Lesson1.Marathon;
+package java_lvl2.Lesson1.Marathon.Sections;
+
+import java_lvl2.Lesson1.Marathon.Participants.Competitor;
 
 public class Water extends Obstacle {
-    int length;
+    private int length;
 
     public Water(int length) {
         this.length = length;

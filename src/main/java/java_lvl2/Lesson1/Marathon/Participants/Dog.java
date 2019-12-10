@@ -1,4 +1,4 @@
-package java_lvl2.Lesson1.Marathon;
+package java_lvl2.Lesson1.Marathon.Participants;
 
 public class Dog extends Animal {
     public Dog(String name) {
