@@ -1,4 +1,4 @@
-package java_lvl2.Lesson1.Marathon;
+package java_lvl2.Lesson1.Marathon.Participants;
 public interface Competitor {
     void run(int dist);
     void swim(int dist);
